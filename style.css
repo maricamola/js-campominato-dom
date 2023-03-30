@@ -58,10 +58,31 @@ h1{
   width: calc(100% / 10);
   aspect-ratio: 1 / 1;
   cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .square.click{
-  background-color: #F9F9F9;
+  background-color: #9b232396;
+}
+
+/*CLASSI SQUARE PER I VARI LIVELLI*/
+
+.square100{
+  width: calc(100% / 10);
+  height: calc(100% / 10);
+}
+
+.square81{
+  width: calc(100% / 9);
+  height: calc(100% / 9);
+}
+
+.square49{
+  width: calc(100% / 7);
+  height: calc(100% / 7);
 }
 
 button{
