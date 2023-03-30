@@ -68,6 +68,10 @@ h1{
   background-color: #9b232396;
 }
 
+.bomb{
+  background-color: rebeccapurple;
+}
+
 /*CLASSI SQUARE PER I VARI LIVELLI*/
 
 .square100{
@@ -100,4 +104,17 @@ button:hover{
 
 .submenu{
   display: none;
+}
+
+.main-wrapper{
+  position: relative;
+}
+
+.end-game{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.315);
 }

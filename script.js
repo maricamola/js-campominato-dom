@@ -72,6 +72,15 @@ function createSquare() {
 
     //Creo un array di tutti gli elementi figli di "parent"
     const squareNumber = Array.from(parent.children).indexOf(newSquare) +1;
+
+    //bombe:
+    if (bombs.includes(squareNumber)) {
+    newSquare.classList.add('bomb');
+    newSquare.addEventListener('click', function() {
+    console.log('Game over!');
+    
+  });
+}
     
     //Aggiungo al newsquare nell'HTML il numero
     newSquare.innerHTML= `<span> ${squareNumber}</span> `
@@ -80,7 +89,8 @@ function createSquare() {
 
   return newSquare;
 }
-  
+
+
 
 
 //Creo funzione per il bottone che dovrà mostrare il container
